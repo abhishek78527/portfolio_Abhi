@@ -32,6 +32,11 @@ export default function Contact() {
                   <a
                     className="contact-detail"
                     href={"tel:" + contactInfo.number}
+                    style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: "1.8rem",
+                  fontWeight: "500"
+                }}
                   >
                     {contactInfo.number}
                   </a>
@@ -42,6 +47,11 @@ export default function Contact() {
               <a
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: "1.8rem",
+                  fontWeight: "500"
+                }}
               >
                 {contactInfo.email_address}
               </a>
@@ -55,16 +65,17 @@ export default function Contact() {
               alt="Abhishek Kumar"
               src={require("../../assets/images/abhishek.jpeg")}
               style={{
-                width: "100%",
-                maxWidth: "320px",
-                height: "420px",
-                objectFit: "cover",
-                borderRadius: "25px",
-                border: "6px solid #55198b",
-                boxShadow: "0 15px 40px rgba(85, 25, 139, 0.4)",
-                marginLeft: "300px",
-                margintop: "200px"
-              }}
+                      width: "100%",
+                      maxWidth: "320px",
+                      height: "360px",
+                      objectFit: "cover",
+                      borderRadius: "25px",
+                      border: "6px solid #55198b",
+                      boxShadow: "0 15px 40px rgba(85, 25, 139, 0.4)",
+                      marginLeft: "300px",
+                      // marginTop: "40px",
+                      display: "block"  // ⬅️ YE ADD KARO
+                    }}
             />
           </div>
         </div>
